@@ -1,8 +1,8 @@
 class Weather{
     constructor(){
         this.apiKey ='9hi3eeUGhhcYUUnwK9w7wwKI07CJmGUB';
-        this.condition_url = "https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/currentconditions/v1/";
-        this.location_url = 'https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/locations/v1/cities/search';
+        this.condition_url = "https://cors-anywhere.herokuapp.com/https://dataservice.accuweather.com/currentconditions/v1/";
+        this.location_url = 'https://cors-anywhere.herokuapp.com/https://dataservice.accuweather.com/locations/v1/cities/search';
     }
     async updateCity(city){
         const cityLocation = await this.getCity(city);
